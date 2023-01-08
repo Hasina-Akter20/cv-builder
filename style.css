@@ -45,13 +45,18 @@ h1 {
   /* justify-items: center; */
   /* justify-content: center; */
 }
-
+/* 
 .header-text {
   margin-left: auto;
   margin-right: 60px;
-}
+} */
 
 .header-image {
   margin-top: -190px;
   margin-left: 500px;
+}
+
+/* input part design  */
+.input-div {
+  margin: 60px;
 }

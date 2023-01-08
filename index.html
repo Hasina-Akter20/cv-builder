@@ -23,7 +23,7 @@
           <h1>
             RESUME <br />
             OF <br />
-            EMON MOLLAH
+            <span >EMON MOLLAH</span>
           </h1>
           <div class="cell">
             <!-- <label>Cell: </label><input placeholder="Phone number" type="text" />
@@ -33,23 +33,25 @@
             <p class="top-text-2">Email: <span id="email-output"></span></p>
           </div>
         </div>
-        <div class="header-image"><div id="display_image" class="profile"></div></div>
+        <div class="header-image">
+          <div id="display_image" class="profile"></div>
+        </div>
       </div>
     </div>
     <!-- input part -->
+    <div class="input-div">
+      <label>Cell: </label>
+      <input id="cell-input" placeholder="Phone number" type="text" />
+      <br />
+      <label>Email: </label>
+      <input id="email-input" placeholder="Phone number" type="text" /> <br />
+      <label>P.P Photo: </label>
+      <input id="image_input" type="file" />
 
-    <label>Cell: </label>
-    <input id="cell-input" placeholder="Phone number" type="text" />
-    <br />
-    <label>Email: </label>
-    <input id="email-input" placeholder="Phone number" type="text" />
-    <label>Profile: </label>
-    <input id="image_input" type="file" />
-
-    <br />
-    <button onclick="onCellSubmit()">submit</button>
-    <button onclick="generatePDF()">Download</button>
-
+      <br />
+      <button onclick="onCellSubmit()" class="btn btn-primary">submit</button>
+      <button onclick="generatePDF()" class="btn btn-warning">Download</button>
+    </div>
     <!-- script file -->
     <script src="script.js"></script>
     <!-- bootstrap script  -->
