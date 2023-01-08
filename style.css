@@ -1,0 +1,57 @@
+/* header part design*/
+/* 2480 x 3508 pixels
+ */
+.cv-main {
+  border: 1px solid black;
+  padding: 80px;
+}
+h1 {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  text-align: center;
+  padding: 0%;
+  margin: 0;
+}
+.cell {
+  text-align: center;
+}
+.cell {
+  color: blue;
+}
+
+.top-text,
+.top-text-2 {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* 591x709  */
+#display_image {
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+}
+/* 
+.profile {
+  position: absolute;
+  top: 15px;
+  left: 900px;
+} */
+
+.header-div {
+  /* display: flex; */
+  /* justify-items: center; */
+  /* justify-content: center; */
+}
+
+.header-text {
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.header-image {
+  margin-top: -190px;
+  margin-left: 500px;
+}
