@@ -83,6 +83,10 @@ input {
 }
 
 /* input part design  */
+h2 {
+  color: blue !important;
+  border-bottom: 1px solid black;
+}
 .input-div {
   margin: 60px;
 }
