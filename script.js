@@ -6,28 +6,47 @@ image_input.addEventListener("change", function () {
   const reader = new FileReader();
   reader.addEventListener("load", () => {
     uploaded_image = reader.result;
-    document.querySelector(
-      "#display_image"
-    ).style.backgroundImage = `url(${uploaded_image})`;
+    // document.querySelector(
+    //   "#display_image"
+    // ).style.backgroundImage = `url(${uploaded_image})`;
+    document
+      .getElementById("display_image")
+      .setAttribute("src", uploaded_image);
   });
   reader.readAsDataURL(this.files[0]);
 });
 
 // signature image
 const signature_input = document.querySelector("#signature_input");
-var uploaded_image = "";
+var uploaded_image02 = "";
 
 signature_input.addEventListener("change", function () {
   // pp size photo
   const reader = new FileReader();
   reader.addEventListener("load", () => {
-    uploaded_image = reader.result;
-    document.querySelector(
-      "#signature_image"
-    ).style.backgroundImage = `url(${uploaded_image})`;
+    uploaded_image02 = reader.result;
+    // document.querySelector(
+    //   "#signature_image"
+    // ).style.backgroundImage = `url(${uploaded_image})`;
+    document
+      .getElementById("signature_image")
+      .setAttribute("src", uploaded_image02);
   });
   reader.readAsDataURL(this.files[0]);
 });
+// //image adding
+// const image_adding = document.querySelector("#image_adding");
+// var adding_image = "";
+
+// image_adding.addEventListener("change", function () {
+//   const reader = new FileReader();
+//   reader.addEventListener("load", () => {
+//     adding_image = reader.result;
+//     console.log(adding_image);
+//     document.getElementById("image-change").setAttribute("src", adding_image);
+//   });
+//   reader.readAsDataURL(this.files[0]);
+// });
 
 // pdf generator
 function generatePDF() {

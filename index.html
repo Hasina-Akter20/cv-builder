@@ -25,7 +25,7 @@
   <body>
     <div id="invoice" class="cv-main">
       <!-- header part  -->
-      <div class="mb-5">
+      <div class="header-part">
         <div class="header-text">
           <h1>
             RESUME <br />
@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="header-image">
-          <div id="display_image" class="profile"></div>
+          <img id="display_image"></img>
         </div>
       </div>
       <div>
@@ -195,10 +195,16 @@
 
       <div class="signature">
         <div class="signature-image">
-          <div id="signature_image" class=""></div>
+          <img id="signature_image" ></img>
         </div>
         <p><span id="name-output-3"> EMON MOLLAH </span></p>
       </div>
+      <br />
+
+      <!-- <div>
+        <p>Picture:</p>
+        <img id="image-change" alt="" />
+      </div> -->
     </div>
     <!-- input part -->
     <div id="input-div" class="input-div">
@@ -216,6 +222,9 @@
       <label>Signature: </label>
       <input id="signature_input" type="file" /><br />
       <br />
+      <!-- <label>Image Adding: </label>
+      <input id="image_adding" type="file" /><br />
+      <br /> -->
       <button onclick="onCellSubmit()" class="btn btn-primary">submit</button>
       <button onclick="generatePDF()" class="btn btn-warning">Download</button>
       <button onclick="printCV()" class="btn btn-secondary">Print CV</button>

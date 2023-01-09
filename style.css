@@ -4,7 +4,7 @@
   font-family: "Roboto", sans-serif !important;
 }
 /* header part design*/
-/* 2480 x 3508 pixels
+/* 2480 x 3508 pixels = A4
  */
 .cv-main {
   /* font-family: "Poppins", sans-serif; */
@@ -30,7 +30,9 @@ h1 {
   padding: 0%;
   margin: 0%;
 }
-
+.header-part {
+  margin-bottom: 60px;
+}
 /* 591x709  */
 #display_image {
   width: 150px;
@@ -43,8 +45,8 @@ h1 {
   width: 200px;
   height: 50px;
   border-bottom: 1px solid black;
-  background-position: center;
-  background-size: cover;
+  /* background-position: center;
+  background-size: cover; */
 }
 
 .signature {
