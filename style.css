@@ -78,8 +78,11 @@ h1 {
 } */
 
 .header-image {
-  margin-top: -190px;
-  margin-left: 800px;
+  /* margin-top: -190px;
+  margin-left: 800px; */
+  position: absolute;
+  top: 15px;
+  left: 900px;
 }
 
 input {
