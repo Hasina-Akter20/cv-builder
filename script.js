@@ -1,5 +1,4 @@
 // pp size photo
-
 const image_input = document.querySelector("#image_input");
 var uploaded_image = "";
 
@@ -13,6 +12,7 @@ image_input.addEventListener("change", function () {
   });
   reader.readAsDataURL(this.files[0]);
 });
+
 // signature image
 const signature_input = document.querySelector("#signature_input");
 var uploaded_image = "";
@@ -29,6 +29,7 @@ signature_input.addEventListener("change", function () {
   reader.readAsDataURL(this.files[0]);
 });
 
+// pdf generator
 function generatePDF() {
   const element = document.getElementById("invoice");
   html2pdf().from(element).save();
@@ -52,4 +53,10 @@ function onCellSubmit() {
   onSubmit("name-input", "name-output");
   onSubmit("name-input", "name-output-2");
   onSubmit("name-input", "name-output-3");
+}
+
+// print cv
+function printCV() {
+  document.getElementById("input-div").style.display = "none";
+  window.print();
 }

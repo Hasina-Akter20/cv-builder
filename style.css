@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif !important;
+}
 /* header part design*/
 /* 2480 x 3508 pixels
  */
 .cv-main {
-  border: 1px solid black;
+  /* font-family: "Poppins", sans-serif; */
+  /* border: 1px solid black; */
   padding: 80px;
 }
 h1 {
@@ -34,7 +40,7 @@ h1 {
   background-size: cover;
 }
 #signature_image {
-  width: 100px;
+  width: 200px;
   height: 50px;
   border-bottom: 1px solid black;
   background-position: center;
@@ -43,7 +49,8 @@ h1 {
 
 .signature {
   margin-top: 200px;
-  width: 400px;
+  width: 300px;
+  height: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,6 +66,7 @@ h1 {
 } */
 
 .header-div {
+  margin-bottom: 60px;
   /* display: flex; */
   /* justify-items: center; */
   /* justify-content: center; */
@@ -71,11 +79,12 @@ h1 {
 
 .header-image {
   margin-top: -190px;
-  margin-left: 500px;
+  margin-left: 800px;
 }
 
 input {
   border: none;
+  width: 600px;
 }
 .reference-div {
   margin-top: 35px;

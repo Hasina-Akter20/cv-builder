@@ -14,6 +14,13 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!-- linked google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="invoice" class="cv-main">
@@ -52,7 +59,11 @@
             <td>
               :
               <!-- <span id="passport-output">EE0230506</span> -->
-              <input type="text" placeholder="Passport Here" />
+              <input
+                type="text"
+                placeholder="Passport Here"
+                value="EE0230506"
+              />
             </td>
           </tr>
           <tr>
@@ -60,7 +71,11 @@
             <td>
               :
               <!-- <span id="birth-output">30 NOV 1994</span> -->
-              <input type="text" placeholder="Birth date Here" />
+              <input
+                type="text"
+                placeholder="Birth date Here"
+                value="30 NOV 1994"
+              />
             </td>
           </tr>
           <tr>
@@ -68,7 +83,11 @@
             <td>
               :
               <!-- <span>MOJIBOR RAHMAN MOLLAH</span> -->
-              <input type="text" placeholder="Father's Name Here" />
+              <input
+                type="text"
+                placeholder="Father's Name Here"
+                value="MOJIBOR RAHMAN MOLLAH"
+              />
             </td>
           </tr>
           <tr>
@@ -76,7 +95,11 @@
             <td>
               :
               <!-- <span>MRS JESMIN KHATUN</span> -->
-              <input type="text" placeholder="Mother's Name Here" />
+              <input
+                type="text"
+                placeholder="Mother's Name Here"
+                value="MRS JESMIN KHATUN"
+              />
             </td>
           </tr>
           <tr>
@@ -120,7 +143,7 @@
             </td>
           </tr>
           <tr>
-            <td>Educational Qualification</td>
+            <td>Educational Qualification &nbsp; &nbsp; &nbsp;</td>
             <td>
               :
               <!-- <span>H.S.C</span> -->
@@ -151,7 +174,7 @@
             <td>
               :
               <!--  <span>Bangla, Malay, Hindi, Englis</span>  -->
-              <input type="text" value="Bangla, Malay, Hindi, Englis" />
+              <input type="text" value="Bangla, Malay, Hindi, English" />
             </td>
           </tr>
         </table>
@@ -178,7 +201,7 @@
       </div>
     </div>
     <!-- input part -->
-    <div class="input-div">
+    <div id="input-div" class="input-div">
       <label>Name: </label>
       <input id="name-input" type="text" value="EMON MOLLAH" /> <br />
       <label>Cell: </label>
@@ -195,6 +218,7 @@
       <br />
       <button onclick="onCellSubmit()" class="btn btn-primary">submit</button>
       <button onclick="generatePDF()" class="btn btn-warning">Download</button>
+      <button onclick="printCV()" class="btn btn-secondary">Print CV</button>
     </div>
     <!-- script file -->
     <script src="script.js"></script>
