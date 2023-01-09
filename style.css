@@ -33,6 +33,24 @@ h1 {
   background-position: center;
   background-size: cover;
 }
+#signature_image {
+  width: 100px;
+  height: 50px;
+  border-bottom: 1px solid black;
+  background-position: center;
+  background-size: cover;
+}
+
+.signature {
+  margin-top: 200px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signature p {
+  /* border-top: 1px solid black; */
+}
 /* 
 .profile {
   position: absolute;
@@ -56,7 +74,22 @@ h1 {
   margin-left: 500px;
 }
 
+input {
+  border: none;
+}
+.reference-div {
+  margin-top: 35px;
+}
+.reference-div p {
+  font-weight: bold;
+  padding: 0%;
+  margin: 0%;
+}
+
 /* input part design  */
 .input-div {
   margin: 60px;
+}
+tr > td {
+  font-weight: bold;
 }

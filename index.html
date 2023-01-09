@@ -23,31 +23,175 @@
           <h1>
             RESUME <br />
             OF <br />
-            <span >EMON MOLLAH</span>
+            <span id="name-output">EMON MOLLAH</span>
           </h1>
           <div class="cell">
             <!-- <label>Cell: </label><input placeholder="Phone number" type="text" />
         <br />
         <label>Email: </label><input placeholder="Phone number" type="text" /> -->
-            <p class="top-text">Cell: <span id="cell-output"></span></p>
-            <p class="top-text-2">Email: <span id="email-output"></span></p>
+            <p class="top-text">
+              Cell: <span id="cell-output">+855 86943864</span>
+            </p>
+            <p class="top-text-2">
+              Email: <span id="email-output">emonmollamolla0@gmail.com</span>
+            </p>
           </div>
         </div>
         <div class="header-image">
           <div id="display_image" class="profile"></div>
         </div>
       </div>
+      <div>
+        <table>
+          <tr>
+            <td>Name</td>
+            <td>: <span id="name-output-2">EMON MOLLAH</span></td>
+          </tr>
+          <tr>
+            <td>Passport</td>
+            <td>
+              :
+              <!-- <span id="passport-output">EE0230506</span> -->
+              <input type="text" placeholder="Passport Here" />
+            </td>
+          </tr>
+          <tr>
+            <td>Date of birth</td>
+            <td>
+              :
+              <!-- <span id="birth-output">30 NOV 1994</span> -->
+              <input type="text" placeholder="Birth date Here" />
+            </td>
+          </tr>
+          <tr>
+            <td>Father's Name</td>
+            <td>
+              :
+              <!-- <span>MOJIBOR RAHMAN MOLLAH</span> -->
+              <input type="text" placeholder="Father's Name Here" />
+            </td>
+          </tr>
+          <tr>
+            <td>Mother's Name</td>
+            <td>
+              :
+              <!-- <span>MRS JESMIN KHATUN</span> -->
+              <input type="text" placeholder="Mother's Name Here" />
+            </td>
+          </tr>
+          <tr>
+            <td>Marital status</td>
+            <td>
+              :
+              <!-- <span>Single</span> -->
+              <input type="text" placeholder="Marital Status" value="Single" />
+            </td>
+          </tr>
+          <tr>
+            <td>Religions</td>
+            <td>
+              :
+              <!-- <span>Islam</span> -->
+              <input type="text" value="Islam" />
+            </td>
+          </tr>
+          <tr>
+            <td>Nationality</td>
+            <td>
+              :
+              <!-- <span>Bangladeshi</span> -->
+              <input type="text" value="Bangladeshi" />
+            </td>
+          </tr>
+          <tr>
+            <td>Height</td>
+            <td>
+              :
+              <!-- <span>1.62m</span> -->
+              <input type="text" value="1.62m" />
+            </td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>
+              :
+              <!-- <span>55</span>kg -->
+              <input type="text" value="55kg" />
+            </td>
+          </tr>
+          <tr>
+            <td>Educational Qualification</td>
+            <td>
+              :
+              <!-- <span>H.S.C</span> -->
+              <input type="text" value="H.S.C" />
+            </td>
+          </tr>
+          <tr>
+            <td>Working Experience</td>
+            <td>
+              :
+              <!-- <span>4 years overseas work experience in Malaysia.</span> -->
+              <input
+                type="text"
+                value="4 years overseas work experience in Malaysia."
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Job Sector</td>
+            <td>
+              :
+              <!-- <span>4G welder</span> -->
+              <input type="text" value="4G welder" />
+            </td>
+          </tr>
+          <tr>
+            <td>Language skil</td>
+            <td>
+              :
+              <!--  <span>Bangla, Malay, Hindi, Englis</span>  -->
+              <input type="text" value="Bangla, Malay, Hindi, Englis" />
+            </td>
+          </tr>
+        </table>
+
+        <div class="reference-div">
+          <p>
+            Reference:
+            <!-- <span>S. A. Noor</span> -->
+            <input type="text" value="S. A. Noor" />
+          </p>
+          <p>
+            Mobile:
+            <!-- <span>+855 96 2868808</span> -->
+            <input type="text" value="+855 96 2868808" />
+          </p>
+        </div>
+      </div>
+
+      <div class="signature">
+        <div class="signature-image">
+          <div id="signature_image" class=""></div>
+        </div>
+        <p><span id="name-output-3"> EMON MOLLAH </span></p>
+      </div>
     </div>
     <!-- input part -->
     <div class="input-div">
+      <label>Name: </label>
+      <input id="name-input" type="text" value="EMON MOLLAH" /> <br />
       <label>Cell: </label>
-      <input id="cell-input" placeholder="Phone number" type="text" />
-      <br />
+      <input id="cell-input" type="text" value="+855 86943864" /><br />
       <label>Email: </label>
-      <input id="email-input" placeholder="Phone number" type="text" /> <br />
+      <input id="email-input" type="text" value="emonmollamolla0@gmail.com" />
+      <br />
+      <br />
       <label>P.P Photo: </label>
-      <input id="image_input" type="file" />
-
+      <input id="image_input" type="file" /><br />
+      <br />
+      <label>Signature: </label>
+      <input id="signature_input" type="file" /><br />
       <br />
       <button onclick="onCellSubmit()" class="btn btn-primary">submit</button>
       <button onclick="generatePDF()" class="btn btn-warning">Download</button>
