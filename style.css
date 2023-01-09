@@ -41,7 +41,10 @@ h1 {
   background-position: center;
   background-size: cover;
 }
-#signature_image {
+.signature-image img {
+  height: 100%;
+}
+.signature-image {
   width: 200px;
   height: 50px;
   border-bottom: 1px solid black;
@@ -57,21 +60,6 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-.signature p {
-  /* border-top: 1px solid black; */
-}
-/* 
-.profile {
-  position: absolute;
-  top: 15px;
-  left: 900px;
-} */
-
-/* 
-.header-text {
-  margin-left: auto;
-  margin-right: 60px;
-} */
 
 .header-image {
   /* margin-top: -190px;
